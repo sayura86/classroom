@@ -16,6 +16,7 @@ div {
 }
 
 body {
+  background: url(pink-spring-flowers.jpg) center center / cover no-repeat fixed;
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
   color: #3b4043;
 }
@@ -87,15 +88,14 @@ a {
 /* メイン */
 
 .card__wrapper {
-  background-image: url("/images/delicate-pink-roses.jpg");
-  height: 800px;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-height: calc(100vh - 161px);
+  min-height: calc(100vh - 182px);
 }
+
 
 /* フォーム周り */
 .form__wrapper{
@@ -138,7 +138,11 @@ a {
 
 .footer {
   background-color: #999;
-  padding: 10px 0;
+  padding: 5px;
+  width:  100%; 
+  position: absolute;
+  box-sizing:  border-box;
+  bottom: 0;
 }
 .copyright {
   text-align: center;

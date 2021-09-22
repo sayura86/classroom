@@ -1,0 +1,12 @@
+<h1>トピック一覧</h1>
+<ul>
+  <% @rooms.each do |room| %>
+    <li><%= link_to room.title, rooms_show_path(room.id) %></li>
+  <% end %>
+</ul>
+
+<h1>トピック新規登録</h1>
+<%= form_for @newRoom, :url => {:action => 'create'} do |f| %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
